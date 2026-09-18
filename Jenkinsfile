@@ -26,14 +26,14 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running JUnit tests...'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
                 echo 'Creating JAR file...'
-                sh 'mvn package -DskipTests'
+                bat 'mvn package -DskipTests'
             }
         }
     }
