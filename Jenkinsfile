@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Java project...'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
